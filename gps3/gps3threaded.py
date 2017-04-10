@@ -7,7 +7,7 @@ from threading import Thread
 from time import sleep
 
 try:  # This kludge to get around imports with files and directories the same name.
-    import gps3  # Python 3
+    from gps3 import gps3  # Python 3
 except ImportError:
     from . import gps3  # Python 2
 
